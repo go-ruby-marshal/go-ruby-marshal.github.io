@@ -1,0 +1,12 @@
+baseURL = "https://go-ruby-marshal.github.io/"
+title = "go-ruby-marshal"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap", "404"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[[params.repos]]
+  name = "marshal"
+  url = "https://github.com/go-ruby-marshal/marshal"
+  status = "ready"
+  blurb = "The library: `Marshal.dump` / `Marshal.load` for Ruby's binary serialization (wire format **v4.8**) over a typed value model — `Nil` / `Bool` / `Int` / `Float` / `Symbol` / `Str` / `Array` / `Hash`. Byte-for-byte identical to MRI: the Fixnum/Bignum split, MRI's shortest-float formatting, the symbol table, and the object-link table so shared objects and **cycles** round-trip."
